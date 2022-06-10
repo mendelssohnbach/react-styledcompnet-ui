@@ -1,5 +1,6 @@
 import { AlertButton, Button } from './libs/Button';
 import { Heading } from './libs/Heading';
+import { Input } from './libs/Input';
 import { Text } from './libs/Text';
 import { TextArea } from './libs/TextArea';
 
@@ -37,6 +38,8 @@ export const App = () => {
         width={200}
         maxLength={100}
       />
+      <Input type="text" />
+      <Input type="password" />
     </>
   );
 };
