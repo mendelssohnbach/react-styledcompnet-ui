@@ -1,11 +1,12 @@
 import { AlertButton, Button } from './libs/Button';
 import { Heading } from './libs/Heading';
 import { Text } from './libs/Text';
+import { TextArea } from './libs/TextArea';
 
 export const App = () => {
   return (
     <>
-      <Text text="true" />
+      <Text text="手を動かしながら学ぶTypeScript" />
       <Heading tag="h1">見出し</Heading>
       <Heading tag="h2">
         <span>hello, world!</span>
@@ -30,6 +31,11 @@ export const App = () => {
         onClick={() => alert('alert')}
         title="alert"
         width={140}
+      />
+      <hr />
+      <TextArea
+        width={200}
+        maxLength={100}
       />
     </>
   );
