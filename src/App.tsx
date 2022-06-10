@@ -1,4 +1,4 @@
-import { Heading } from './libs/constants/Heading';
+import { Heading } from './libs/Heading';
 import { Text } from './libs/Text';
 
 export const App = () => {
