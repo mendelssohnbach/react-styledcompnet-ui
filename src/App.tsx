@@ -1,6 +1,7 @@
 import { AlertButton, Button } from './libs/Button';
 import { Heading } from './libs/Heading';
 import { Input } from './libs/Input';
+import { PasswordForm } from './libs/PasswordForm';
 import { Text } from './libs/Text';
 import { TextArea } from './libs/TextArea';
 
@@ -40,6 +41,8 @@ export const App = () => {
       />
       <Input type="text" />
       <Input type="password" />
+      <hr />
+      <PasswordForm onSubmit={(password) => console.log(password)} />
     </>
   );
 };
