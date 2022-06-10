@@ -1,4 +1,4 @@
-import { Button } from './libs/Button';
+import { AlertButton, Button } from './libs/Button';
 import { Heading } from './libs/Heading';
 import { Text } from './libs/Text';
 
@@ -25,6 +25,11 @@ export const App = () => {
         onClick={() => console.log('clicked')}
         title="Button"
         type="error"
+      />
+      <AlertButton
+        onClick={() => alert('alert')}
+        title="alert"
+        width={140}
       />
     </>
   );

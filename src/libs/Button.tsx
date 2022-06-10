@@ -23,6 +23,19 @@ export const Button: VFC<Props> = ({ title, onClick, width = 80, type = 'primary
   );
 };
 
+type AlertButtonProps = Omit<Props, 'type'>;
+
+export const AlertButton: VFC<AlertButtonProps> = ({ title, width = 80, onClick }) => {
+  return (
+    <Button
+      type="error"
+      onClick={onClick}
+      title={title}
+      width={width}
+    />
+  );
+};
+
 const Wrapper = styled.button<{ width: number }>`
   padding: ${space.m};
   border-radius: ${radius.m};
